@@ -1,0 +1,34 @@
+﻿@model DemoMVCApp.MyApplication
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MyApplication</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MyApplicationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MyApplicationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastModifiedDateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastModifiedDateTime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MyApplicationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

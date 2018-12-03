@@ -1,0 +1,38 @@
+﻿@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>    
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div> 
+        <h2>My Demo Application</h2>
+
+<p>
+    @Html.ActionLink("Dashboard", "Index")
+
+    <p onclick="ClickHere()" >Click Here</p>
+</p>
+    </div>
+
+    <script>
+
+        $(document).ready(function () {
+            //Script to run on document ready
+
+        });
+
+        function ClickHere() {
+            alert('Hey There!');
+        }
+
+    </script>
+
+</body>
+</html>
